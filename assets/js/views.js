@@ -17,7 +17,7 @@ export const ICON = {
 
 export function img(name, alt = '', { sizes = '(max-width: 760px) 100vw, 50vw', eager = false, cls = '' } = {}) {
   const base = `assets/img/${name}`;
-  return `<img class="ph ${cls}" src="${base}-sm.webp" srcset="${base}-sm.webp 720w, ${base}.webp 1600w" sizes="${sizes}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
+  return `<img class="ph ${cls}" src="${base}-sm.webp" srcset="${base}-sm.webp 720w, ${base}-md.webp 1080w, ${base}.webp 1400w" sizes="${sizes}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
 }
 
 const SUBS = {
@@ -72,7 +72,7 @@ export function home() {
       <p class="hero__word" aria-hidden="true" data-hero-word>Dokkan <span class="amp">al</span> Werd</p>
       <div class="hero__visual" data-hero-visual>
         <span class="hero__ring"></span>
-        <div class="hero__arch" data-hero-arch>${img('b-lilac-reverie', 'باقة حلم الليلك — ورد أبيض وخوخي مع أزهار ليلكية', { eager: true, sizes: '(max-width: 980px) 78vw, 46vh' })}</div>
+        <div class="hero__arch" data-hero-arch>${img('b-lilac-reverie', 'باقة حلم الليلك — ورد أبيض وخوخي مع أزهار ليلكية', { eager: true, sizes: '(max-width: 980px) 58vw, 40vh' })}</div>
         <a class="hero__float hero__float--a" href="#/p/velvet-rouge" data-depth="26" aria-label="باقة مخمل أحمر">
           ${img('b-velvet-rouge', '', { eager: true, sizes: '210px' })}<span class="hero__cap en">Velvet Rouge</span></a>
         <a class="hero__float hero__float--b" href="#/p/violet-bloom" data-depth="-34" aria-label="خاتم زهرة البنفسج">

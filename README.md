@@ -28,7 +28,7 @@ python3 -m http.server 8000
 
 صفحة **إعدادات المتجر** (`#/admin`) تعرض التنبيه بأن البيانات تجريبية، وتتيح معاينة أسعار جديدة في المتصفح، ثم تنزيل ملف `products.json` محدّث لرفعه مكان القديم.
 
-لإضافة منتج: ضع صورتين في `assets/img/` (`name.webp` بعرض 1600px و `name-sm.webp` بعرض 720px)، ثم أضف عنصراً في `products` يحمل `"image": "name"`.
+لإضافة منتج: ضع ثلاث نسخ من الصورة في `assets/img/`: `name.webp` (1400px) و `name-md.webp` (1080px) و `name-sm.webp` (720px)، ثم أضف عنصراً في `products` يحمل `"image": "name"`.
 
 ## ما يعمل فعلياً
 
@@ -60,6 +60,6 @@ assets/js/store.js      البيانات والسلة والطلبات
 assets/js/motion.js     الحركة والانتقالات
 assets/vendor/          GSAP و Lenis (نسخ محلية)
 assets/fonts/           Amiri و IBM Plex Sans Arabic و Cormorant Garamond (محلية)
-assets/img/             صور المنتجات (WebP بحجمين)
+assets/img/             صور المنتجات (WebP بثلاثة أحجام)
 assets/brand/           الشعار والأيقونات
 ```
