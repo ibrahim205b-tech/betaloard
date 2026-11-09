@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>دكان الورد — Dokkan al Werd</title>
+  <meta name="description" content="دكان الورد — بوكيهات ورد طبيعي، قلائد وخواتم فضة، هدايا وعطور. Flowers & gifts & perfume.">
+  <meta name="theme-color" content="#241B2B">
+  <meta property="og:title" content="دكان الورد — Dokkan al Werd">
+  <meta property="og:description" content="Flowers & gifts & perfume — ورد، فضة، هدايا وعطور.">
+  <meta property="og:image" content="assets/img/b-lilac-reverie.webp">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/amiri-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>try{if(!sessionStorage.getItem("dw_intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("has-intro")}catch(e){}</script>
+</head>
+<body class="is-loading">
+  <a class="skip" href="#app">تخطَّ إلى المحتوى</a>
+
+  <!-- Cinematic intro (first visit per session) -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__veil intro__veil--a"></div>
+    <div class="intro__veil intro__veil--b"></div>
+    <div class="intro__core">
+      <img class="intro__logo" src="assets/brand/logo.webp" alt="" width="160" height="160">
+      <p class="intro__word"><span>Dokkan</span> <em>al</em> <span>Werd</span></p>
+      <span class="intro__line"></span>
+    </div>
+  </div>
+
+  <header class="hdr" id="hdr">
+    <div class="hdr__inner">
+      <button class="hdr__menu" id="menuBtn" aria-label="القائمة" aria-expanded="false" aria-controls="drawerNav">
+        <span></span><span></span>
+      </button>
+      <a class="hdr__brand" href="#/" aria-label="دكان الورد — الرئيسية">
+        <img src="assets/brand/logo.webp" alt="" width="40" height="40">
+        <span class="hdr__word"><b>دكان الورد</b><i>Dokkan al Werd</i></span>
+      </a>
+      <nav class="hdr__nav" aria-label="الأقسام">
+        <a href="#/c/bouquets" data-nav="bouquets">الورد</a>
+        <a href="#/c/necklaces" data-nav="necklaces">القلائد</a>
+        <a href="#/c/rings" data-nav="rings">الخواتم</a>
+        <a href="#/c/gifts" data-nav="gifts">الهدايا</a>
+        <a href="#/c/perfumes" data-nav="perfumes">العطور</a>
+        <a href="#/about" data-nav="about">حكايتنا</a>
+      </nav>
+      <button class="hdr__cart" id="cartBtn" aria-label="سلة التسوق" aria-controls="cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="hdr__count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mnav" id="drawerNav" aria-hidden="true">
+    <nav class="mnav__list" aria-label="القائمة الرئيسية">
+      <a href="#/c/bouquets"><small>I</small>بوكيهات الورد</a>
+      <a href="#/c/necklaces"><small>II</small>القلائد والإكسسوارات</a>
+      <a href="#/c/rings"><small>III</small>خواتم الفضة</a>
+      <a href="#/c/gifts"><small>IV</small>الهدايا</a>
+      <a href="#/c/perfumes"><small>V</small>العطور</a>
+    </nav>
+    <div class="mnav__foot">
+      <a href="#/about">حكايتنا</a>
+      <a href="#/contact">تواصل معنا</a>
+      <a href="#/cart">السلة</a>
+    </div>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="ftr">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <img src="assets/brand/logo.webp" alt="شعار دكان الورد" width="96" height="96" loading="lazy">
+        <p class="ftr__tag">Flowers <em>&amp;</em> gifts <em>&amp;</em> perfume</p>
+      </div>
+      <div class="ftr__cols">
+        <div>
+          <h4>المتجر</h4>
+          <a href="#/c/bouquets">بوكيهات الورد</a>
+          <a href="#/c/necklaces">القلائد والإكسسوارات</a>
+          <a href="#/c/rings">خواتم الفضة</a>
+          <a href="#/c/gifts">الهدايا</a>
+          <a href="#/c/perfumes">العطور</a>
+        </div>
+        <div>
+          <h4>الدكان</h4>
+          <a href="#/about">حكايتنا</a>
+          <a href="#/contact">تواصل معنا</a>
+          <a href="#/cart">سلة التسوق</a>
+          <a href="#/admin">إعدادات المتجر</a>
+        </div>
+      </div>
+    </div>
+    <div class="ftr__bottom">
+      <span>© <span id="year"></span> Dokkan al Werd — دكان الورد</span>
+      <span class="ftr__demo">نسخة تجريبية · الأسعار والمنتجات للعرض فقط</span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart" id="cart" aria-label="سلة التسوق" aria-hidden="true">
+    <div class="cart__head">
+      <h2>السلة <span id="cartHeadCount"></span></h2>
+      <button class="icon-btn" id="cartClose" aria-label="إغلاق السلة">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart__body" id="cartBody"></div>
+    <div class="cart__foot" id="cartFoot"></div>
+  </aside>
+
+  <div class="curtain" id="curtain" aria-hidden="true"><span></span></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

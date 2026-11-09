@@ -1,0 +1,27 @@
+{
+  "_notice": "إعدادات المتجر — Store settings. All prices, fees and products are DEMO values and can be edited freely.",
+  "demo_mode": true,
+  "store_name_ar": "دكان الورد",
+  "store_name_en": "Dokkan al Werd",
+  "tagline_en": "Flowers & gifts & perfume",
+  "currency_label": "د.ع",
+  "contact": {
+    "whatsapp": "",
+    "phone": "",
+    "email": "",
+    "instagram": "",
+    "address_ar": "العراق",
+    "hours_ar": "يومياً 10 صباحاً – 10 مساءً"
+  },
+  "delivery": {
+    "zones": [
+      { "id": "baghdad", "name_ar": "بغداد", "fee": 5000 },
+      { "id": "other", "name_ar": "المحافظات الأخرى", "fee": 8000 }
+    ],
+    "free_over": 75000
+  },
+  "gift_card_fee": 0,
+  "payment_methods": [
+    { "id": "cod", "name_ar": "الدفع عند الاستلام" }
+  ]
+}
